@@ -25,7 +25,7 @@ to its configuration to make that work.
 ## Usage
 You can now create a spy. What that means is that incoming (= calls) and
 outgoing (= responses) data to/from that function will be stored in the
-`nsa.core/spy-db` atom.
+`nsa.spy/spy-db` atom.
 
 ### Creating a spy
 Say you have the following function:
@@ -38,5 +38,5 @@ Say you have the following function:
 
 Wherever you like, run the following:
 ```
-(nsa.core/register-spy #'com.megacorp.utils/my-sum)
+(nsa.spy/spy-on #'com.megacorp.utils/my-sum)
 ```
